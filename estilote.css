@@ -1,0 +1,76 @@
+body{
+    font-family:Arial;
+    background-color:gray; 
+    padding: 10px; 
+    text-shadow: 
+}
+.encabezado{
+    background-image: url(rojo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px;
+    text-align:center;
+    height: 50%;
+    color: black;
+    font-family:cursive;
+    background-color:red;
+   } 
+ .encabezado{
+     
+    font-size: 90px;
+    color:dimgrey;
+    font-family:cursive;
+    text-shadow:black -2px 5px; 
+}
+.menu{
+    background-color:white;
+    overflow:hidden;
+}
+.menu a{
+    float: left;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+.menu a:hover{
+    color:black;
+    background-color:gainsboro;
+}
+.izquierdo{
+    float: left;
+    width: 65%;
+    background-color:gainsboro;
+}
+ 
+.derecha{
+    float: right;
+    width: 35%;
+    background-color:black;
+    padding-left:10px;
+}
+.cuerpo::after{
+    content: "";
+    display:table;
+    clear:both;
+    
+}
+.pie{
+    padding: 10px;
+    margin-top: 0px;
+    background-color:dimgray;
+    text-align: center;  
+}
+@media screen and (max-width> 800px){
+    .izquierda, .derecha{
+        width:100%;
+        padding: 0;    
+    }
+}
+@media screen and (max-width:400px){
+    .menu a {
+         float:none;
+        width:100%;
+    }
+}
